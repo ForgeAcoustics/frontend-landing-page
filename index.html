@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ForgeAcoustics - Ultrasound AI Development Infrastructure</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="page-header py-5 px-4 md:px-8">
+    <div class="max-w-7xl mx-auto flex justify-between items-center gap-6">
+      <a href="#top" class="brand-font text-sm md:text-lg font-normal uppercase tracking-wider">ForgeAcoustics</a>
+
+      <div class="hidden md:flex space-x-8">
+        <a href="#problem" class="universal-sans text-sm text-white/70 hover:text-white transition-colors">Problem</a>
+        <a href="#solution" class="universal-sans text-sm text-white/70 hover:text-white transition-colors">Solution</a>
+        <a href="#platform" class="universal-sans text-sm text-white/70 hover:text-white transition-colors">Platform</a>
+        <a href="#usecases" class="universal-sans text-sm text-white/70 hover:text-white transition-colors">Use Cases</a>
+      </div>
+
+      <a href="https://calendar.google.com/calendar/r/eventedit?text=ForgeAcoustics+Demo&details=Book+a+demo+with+ForgeAcoustics&location=Online" target="_blank" rel="noopener noreferrer" class="brand-font text-xs font-normal uppercase tracking-widest bg-white text-[#02040a] px-5 py-3 hover:bg-white/90 transition-colors inline-flex items-center justify-center">
+        Book a Demo
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Animation -->
+  <section id="top" class="hero-animation" aria-label="ForgeAcoustics hero animation">
+    <div class="hero-sticky">
+      <canvas id="scene"></canvas>
+      <div class="vignette"></div>
+
+      <header class="hero-brand">
+        <h1>Forge Acoustics</h1>
+        <p>Physics simulation <span>forged</span> with real-world data</p>
+      </header>
+
+      <section class="steps" aria-hidden="true">
+        <div class="step active">
+          <h3>1. Raw Data</h3>
+          <p>Scattered. Incomplete. Hard to learn from.</p>
+        </div>
+        <div class="step">
+          <h3>2. Emergence</h3>
+          <p>Patterns emerge through physics-informed simulation.</p>
+        </div>
+        <div class="step">
+          <h3>3. Forging</h3>
+          <p>Real-world data and synthetic physics merge into one representation.</p>
+        </div>
+        <div class="step">
+          <h3>4. Intelligence</h3>
+          <p>Tailored algorithms. Purpose-built software. Deployment-ready output.</p>
+        </div>
+      </section>
+
+      <div class="bottom-line">From data to deployment. We <span>forge</span> what matters.</div>
+    </div>
+  </section>
+
+  <main>
+    <!-- Problem Section -->
+    <section id="problem" class="py-24 px-4 md:px-8">
+      <div class="max-w-4xl mx-auto section-card">
+        <h2 class="brand-font text-4xl md:text-5xl font-light mb-12 text-center">
+          Ultrasound AI is limited by data.
+        </h2>
+        <div class="space-y-8">
+          <div class="glass-card p-8">
+            <h3 class="universal-sans text-xl font-normal mb-4">Real data is realistic but lacks ground truth</h3>
+            <p class="universal-sans text-base text-white/70 leading-relaxed">
+              Clinical ultrasound data provides authentic imaging characteristics, but often lacks precise annotations and ground truth labels needed for supervised learning.
+            </p>
+          </div>
+          <div class="glass-card p-8">
+            <h3 class="universal-sans text-xl font-normal mb-4">Synthetic data has labels but lacks realism</h3>
+            <p class="universal-sans text-base text-white/70 leading-relaxed">
+              Generated synthetic data offers perfect labels and controlled scenarios, but often fails to capture the complex artifacts and variations present in real ultrasound imaging.
+            </p>
+          </div>
+          <div class="glass-card p-8">
+            <h3 class="universal-sans text-xl font-normal mb-4">Data is hard to scale</h3>
+            <p class="universal-sans text-base text-white/70 leading-relaxed">
+              Collecting and annotating sufficient ultrasound data for robust AI training is slow, expensive, and limited by patient privacy and clinical constraints.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="py-24 px-4 md:px-8">
+      <div class="max-w-6xl mx-auto section-card">
+        <h2 class="brand-font text-4xl md:text-5xl font-light mb-16 text-center">
+          Physics simulation forged with real-world data.
+        </h2>
+        <div class="text-center mb-12">
+          <p class="universal-sans text-lg text-white/70 max-w-3xl mx-auto leading-relaxed">
+            ForgeAcoustics turns ultrasound AI development from a data bottleneck into a repeatable engineering process: real data informs simulation, simulation generates ground truth, and the result becomes task-specific software.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-5 gap-4 text-center">
+          <div class="glass-card p-6"><span class="brand-font text-sm text-accent">01</span><p class="mt-3 text-sm text-white/75">Real Ultrasound Data</p></div>
+          <div class="glass-card p-6"><span class="brand-font text-sm text-accent">02</span><p class="mt-3 text-sm text-white/75">Physics Simulation</p></div>
+          <div class="glass-card p-6"><span class="brand-font text-sm text-accent">03</span><p class="mt-3 text-sm text-white/75">Synthetic Ground Truth</p></div>
+          <div class="glass-card p-6"><span class="brand-font text-sm text-accent">04</span><p class="mt-3 text-sm text-white/75">Model Training</p></div>
+          <div class="glass-card p-6"><span class="brand-font text-sm text-accent">05</span><p class="mt-3 text-sm text-white/75">Finished Software</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Platform Section -->
+    <section id="platform" class="py-24 px-4 md:px-8">
+      <div class="max-w-6xl mx-auto section-card">
+        <h2 class="brand-font text-4xl md:text-5xl font-light mb-16 text-center">
+          One workflow. Two deployment modes.
+        </h2>
+        <div class="grid md:grid-cols-2 gap-12">
+          <div class="glass-card p-8 fly-left">
+            <h3 class="brand-font text-2xl font-light mb-6 uppercase tracking-wider">Forge Flow</h3>
+            <p class="universal-sans text-base text-white/70 leading-relaxed mb-6">
+              A cloud-based pipeline for end-to-end ultrasound algorithm development: data ingestion, simulation generation, synthetic ground truth, training, evaluation, and deployment-ready outputs.
+            </p>
+            <ul class="space-y-3 text-sm text-white/75">
+              <li>• Automated data processing</li>
+              <li>• Physics-informed synthetic generation</li>
+              <li>• GPU-accelerated training and evaluation</li>
+            </ul>
+          </div>
+
+          <div class="glass-card p-8 fly-right">
+            <h3 class="brand-font text-2xl font-light mb-6 uppercase tracking-wider">Forge Suite</h3>
+            <p class="universal-sans text-base text-white/70 leading-relaxed mb-6">
+              A secure local development environment for procedural, physics-informed tissue phantom generation and task-specific simulation.
+            </p>
+            <ul class="space-y-3 text-sm text-white/75">
+              <li>• On-premise deployment</li>
+              <li>• Secure handling of sensitive data</li>
+              <li>• Customizable anatomy and simulation parameters</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="usecases" class="py-24 px-4 md:px-8">
+      <div class="max-w-6xl mx-auto section-card">
+        <h2 class="brand-font text-4xl md:text-5xl font-light mb-16 text-center">
+          Tailor-made ultrasound software.
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="glass-card p-8 fly-up">
+            <h3 class="brand-font text-xl font-light mb-4 uppercase tracking-wider">Vascular & Cardiac Segmentation</h3>
+            <p class="text-white/70 text-sm leading-relaxed mb-5">Real-time segmentation for vascular and cardiac ultrasound acquisition, supporting deformation analysis, motion quantification, and task-specific clinical workflows.</p>
+            <ul class="space-y-2 text-sm text-white/70">
+              <li>• Vessel and tissue segmentation</li>
+              <li>• Cardiac deformation analysis</li>
+              <li>• Acquisition support</li>
+            </ul>
+          </div>
+
+          <div class="glass-card p-8 fly-up">
+            <h3 class="brand-font text-xl font-light mb-4 uppercase tracking-wider">Lung Speckle Tracking</h3>
+            <p class="text-white/70 text-sm leading-relaxed mb-5">A lung ultrasound application that tracks speckle movement across frames to estimate tissue displacement, stress, and strain.</p>
+            <ul class="space-y-2 text-sm text-white/70">
+              <li>• Speckle motion tracking</li>
+              <li>• Stress and strain analysis</li>
+              <li>• Quantitative lung mechanics</li>
+            </ul>
+          </div>
+
+          <div class="glass-card p-8 fly-up">
+            <h3 class="brand-font text-xl font-light mb-4 uppercase tracking-wider">Optic Nerve Sheath Measurement</h3>
+            <p class="text-white/70 text-sm leading-relaxed mb-5">Automated multi-parameter optic nerve sheath assessment for faster, more repeatable ultrasound analysis.</p>
+            <ul class="space-y-2 text-sm text-white/70">
+              <li>• Automated detection</li>
+              <li>• Multi-parameter measurements</li>
+              <li>• Improved consistency</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Section -->
+    <section id="value" class="py-24 px-4 md:px-8">
+      <div class="max-w-6xl mx-auto section-card">
+        <h2 class="brand-font text-4xl md:text-5xl font-light mb-16 text-center">
+          From data bottleneck to algorithm factory.
+        </h2>
+        <div class="grid md:grid-cols-2 gap-12">
+          <div class="glass-card p-8 fly-left">
+            <h3 class="brand-font text-2xl font-light mb-8 uppercase tracking-wider">For Researchers</h3>
+            <ul class="space-y-4 text-base text-white/70">
+              <li>• Faster hypothesis testing</li>
+              <li>• Controlled ground truth</li>
+              <li>• Reproducible experiments</li>
+              <li>• Task-specific models and software</li>
+            </ul>
+          </div>
+
+          <div class="glass-card p-8 fly-right">
+            <h3 class="brand-font text-2xl font-light mb-8 uppercase tracking-wider">For Investors</h3>
+            <ul class="space-y-4 text-base text-white/70">
+              <li>• Platform technology, not a single algorithm</li>
+              <li>• Multiple clinical verticals</li>
+              <li>• Scalable software and data infrastructure</li>
+              <li>• Strong positioning in ultrasound AI development</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 px-4 md:px-8">
+      <div class="max-w-4xl mx-auto text-center section-card">
+        <h2 class="brand-font text-4xl md:text-5xl font-light mb-8">
+          Build your next ultrasound algorithm faster.
+        </h2>
+        <p class="universal-sans text-lg text-white/70 max-w-2xl mx-auto mb-12 leading-relaxed">
+          Book a demo to see how ForgeAcoustics turns real-world ultrasound data and physics simulation into tailor-made AI software.
+        </p>
+        <a href="https://calendar.google.com/calendar/r/eventedit?text=ForgeAcoustics+Demo&details=Book+a+demo+with+ForgeAcoustics&location=Online" target="_blank" rel="noopener noreferrer" class="brand-font text-sm font-normal uppercase tracking-widest bg-white text-[#02040a] px-8 py-4 hover:bg-white/90 transition-colors inline-flex items-center justify-center">
+          Book a Demo
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 md:px-8 border-t border-white/10">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <div class="brand-font text-lg font-normal uppercase tracking-wider mb-4">ForgeAcoustics</div>
+            <p class="text-sm text-white/70 leading-relaxed">Physics-informed synthetic data for ultrasound AI development.</p>
+          </div>
+          <div>
+            <h4 class="brand-font text-sm font-normal uppercase tracking-wider mb-4">Platform</h4>
+            <ul class="space-y-2 text-sm text-white/70">
+              <li><a href="#platform" class="hover:text-white transition-colors">Forge Flow</a></li>
+              <li><a href="#platform" class="hover:text-white transition-colors">Forge Suite</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="brand-font text-sm font-normal uppercase tracking-wider mb-4">Company</h4>
+            <ul class="space-y-2 text-sm text-white/70">
+              <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+              <li><a href="terms.html" class="hover:text-white transition-colors">Terms of Use</a></li>
+              <li><a href="imprint.html" class="hover:text-white transition-colors">Imprint</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="brand-font text-sm font-normal uppercase tracking-wider mb-4">Contact</h4>
+            <p class="text-sm text-white/70 leading-relaxed">Ready to accelerate your ultrasound AI development?</p>
+            <a href="https://calendar.google.com/calendar/r/eventedit?text=ForgeAcoustics+Demo&details=Book+a+demo+with+ForgeAcoustics&location=Online" target="_blank" rel="noopener noreferrer" class="brand-font text-xs font-normal uppercase tracking-widest bg-white text-[#02040a] px-4 py-2 mt-4 hover:bg-white/90 transition-colors inline-flex items-center justify-center">
+              Book Demo
+            </a>
+          </div>
+        </div>
+        <div class="border-t border-white/10 pt-8 text-center">
+          <p class="text-sm text-white/50">© 2026 ForgeAcoustics. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script type="module" src="script-hero.js"></script>
+</body>
+</html>
