@@ -6,7 +6,7 @@ const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
 const scene = new THREE.Scene();
-scene.fog = new THREE.FogExp2(0x02040a, 0.038);
+scene.fog = new THREE.FogExp2(0x0a0f1a, 0.038);
 
 const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 120);
 camera.position.set(0, 0.4, 12);
