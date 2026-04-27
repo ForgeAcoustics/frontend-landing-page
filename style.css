@@ -8,12 +8,12 @@
 
 html {
   scroll-behavior: smooth;
-  background: #02040a;
+  background: #0a0f1a;
 }
 
 body {
   overflow-x: hidden;
-  background: #02040a;
+  background: #0a0f1a;
   color: #ffffff;
   font-family: 'Inter', sans-serif;
 }
@@ -38,7 +38,7 @@ body {
   left: 0;
   right: 0;
   z-index: 50;
-  background: rgba(2, 4, 10, 0.58);
+  background: rgba(10, 15, 26, 0.58);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(18px);
 }
@@ -47,7 +47,7 @@ body {
 .hero-animation {
   position: relative;
   height: 420vh;
-  background: #02040a;
+  background: #0a0f1a;
 }
 
 .hero-sticky {
@@ -55,7 +55,7 @@ body {
   top: 0;
   height: 100vh;
   overflow: hidden;
-  background: radial-gradient(circle at center, #07111f 0%, #02040a 54%, #000 100%);
+  background: radial-gradient(circle at center, #1f293e 0%, #101623 54%, #0a0f1a 100%);
 }
 
 #scene {
@@ -72,8 +72,8 @@ body {
   z-index: 1;
   pointer-events: none;
   background:
-    radial-gradient(circle at center, transparent 34%, rgba(0,0,0,0.6) 100%),
-    linear-gradient(to bottom, rgba(0,0,0,0.6), transparent 22%, transparent 68%, rgba(0,0,0,0.74));
+    radial-gradient(circle at center, transparent 34%, rgba(10,15,26,0.35) 100%),
+    linear-gradient(to bottom, rgba(10,15,26,0.35), transparent 22%, transparent 68%, rgba(10,15,26,0.45));
 }
 
 .hero-brand {
