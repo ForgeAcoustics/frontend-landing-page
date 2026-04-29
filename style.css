@@ -8,14 +8,24 @@
 
 html {
   scroll-behavior: smooth;
-  background: #0a0f1a;
+  background: #02040a;
 }
 
 body {
   overflow-x: hidden;
-  background: #0a0f1a;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(90, 200, 255, 0.08), transparent 32%),
+    linear-gradient(to bottom, #02040a, #080b11 18%, #05070c 100%);
   color: #ffffff;
   font-family: 'Inter', sans-serif;
+}
+
+.content-page .section-card,
+.content-page .fly-left,
+.content-page .fly-right,
+.content-page .fly-up {
+  opacity: 1;
+  transform: none;
 }
 
 .geist-mono,
@@ -47,7 +57,7 @@ body {
 .hero-animation {
   position: relative;
   height: 420vh;
-  background: #0a0f1a;
+  background: transparent;
 }
 
 .hero-sticky {
@@ -55,7 +65,9 @@ body {
   top: 0;
   height: 100vh;
   overflow: hidden;
-  background: radial-gradient(circle at center, #1f293e 0%, #101623 54%, #0a0f1a 100%);
+  background:
+    radial-gradient(circle at center, #1f293e 0%, #101623 54%, #0a0f1a 100%),
+    linear-gradient(to bottom, rgba(2, 4, 10, 0.2), rgba(5, 7, 12, 0.45));
 }
 
 #scene {
@@ -196,9 +208,7 @@ body {
 main {
   position: relative;
   z-index: 10;
-  background:
-    radial-gradient(circle at 20% 0%, rgba(90, 200, 255, 0.08), transparent 32%),
-    linear-gradient(to bottom, #02040a, #080b11 18%, #05070c 100%);
+  background: transparent;
 }
 
 .section-card {
@@ -272,4 +282,3 @@ main {
     display: none;
   }
 }
-

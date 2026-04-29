@@ -11,24 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <!-- Navigation -->
-  <nav class="page-header py-5 px-4 md:px-8">
-    <div class="max-w-7xl mx-auto flex justify-between items-center gap-6">
-      <a href="#top" class="brand-font text-sm md:text-lg font-normal uppercase tracking-wider">ForgeAcoustics</a>
-
-      <div class="hidden md:flex space-x-8">
-        <a href="#problem" class="universal-sans text-sm text-white/70 hover:text-white transition-colors">Problem</a>
-        <a href="#solution" class="universal-sans text-sm text-white/70 hover:text-white transition-colors">Solution</a>
-        <a href="#platform" class="universal-sans text-sm text-white/70 hover:text-white transition-colors">Platform</a>
-        <a href="#usecases" class="universal-sans text-sm text-white/70 hover:text-white transition-colors">Use Cases</a>
-      </div>
-
-      <a href="https://calendar.google.com/calendar/r/eventedit?text=ForgeAcoustics+Demo&details=Book+a+demo+with+ForgeAcoustics&location=Online" target="_blank" rel="noopener noreferrer" class="brand-font text-xs font-normal uppercase tracking-widest bg-white text-[#02040a] px-5 py-3 hover:bg-white/90 transition-colors inline-flex items-center justify-center">
-        Book a Demo
-      </a>
-    </div>
-  </nav>
+<body data-home-prefix="" data-brand-href="#top">
+  <div data-include="header.html"></div>
 
   <!-- Hero Animation -->
   <section id="top" class="hero-animation" aria-label="ForgeAcoustics hero animation">
@@ -234,44 +218,10 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-12 px-4 md:px-8 border-t border-white/10">
-      <div class="max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-4 gap-8 mb-8">
-          <div>
-            <div class="brand-font text-lg font-normal uppercase tracking-wider mb-4">ForgeAcoustics</div>
-            <p class="text-sm text-white/70 leading-relaxed">Physics-informed synthetic data for ultrasound AI development.</p>
-          </div>
-          <div>
-            <h4 class="brand-font text-sm font-normal uppercase tracking-wider mb-4">Platform</h4>
-            <ul class="space-y-2 text-sm text-white/70">
-              <li><a href="#platform" class="hover:text-white transition-colors">Forge Flow</a></li>
-              <li><a href="#platform" class="hover:text-white transition-colors">Forge Suite</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="brand-font text-sm font-normal uppercase tracking-wider mb-4">Company</h4>
-            <ul class="space-y-2 text-sm text-white/70">
-              <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="terms.html" class="hover:text-white transition-colors">Terms of Use</a></li>
-              <li><a href="imprint.html" class="hover:text-white transition-colors">Imprint</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="brand-font text-sm font-normal uppercase tracking-wider mb-4">Contact</h4>
-            <p class="text-sm text-white/70 leading-relaxed">Ready to accelerate your ultrasound AI development?</p>
-            <a href="https://calendar.google.com/calendar/r/eventedit?text=ForgeAcoustics+Demo&details=Book+a+demo+with+ForgeAcoustics&location=Online" target="_blank" rel="noopener noreferrer" class="brand-font text-xs font-normal uppercase tracking-widest bg-white text-[#02040a] px-4 py-2 mt-4 hover:bg-white/90 transition-colors inline-flex items-center justify-center">
-              Book Demo
-            </a>
-          </div>
-        </div>
-        <div class="border-t border-white/10 pt-8 text-center">
-          <p class="text-sm text-white/50">© 2026 ForgeAcoustics. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
+    <div data-include="footer.html"></div>
   </main>
 
+  <script src="layout.js"></script>
   <script type="module" src="script-hero.js"></script>
 </body>
 </html>
